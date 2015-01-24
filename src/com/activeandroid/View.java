@@ -1,6 +1,5 @@
 package com.activeandroid;
 
-import com.activeandroid.util.Log;
 import com.activeandroid.util.SQLiteUtils;
 
 import java.util.List;
@@ -16,11 +15,6 @@ public abstract class View extends Model {
     @Override
     public Long save() {
         throw new RuntimeException("Cannot save view row");
-    }
-
-    @Override
-    public Long getId() {
-        return 0L;
     }
 
     @SuppressWarnings("UnusedDeclaration")
